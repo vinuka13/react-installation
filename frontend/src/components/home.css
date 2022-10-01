@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("BG-GIF.gif");
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    color: white;
+}
+
+.content {
+    display: flex;
+    margin-top: 5%;
+}
+
+.pic {
+    width: 50%;
+}
+
+.pic img {
+    margin-left: 40%;
+    width: 60%;
+}
+
+.form {
+    width: 50%;
+    text-align: center;
+}
+
+input {
+    height: 25px;
+    width: 60%;
+    margin-bottom: 5%;
+    border-radius: 6px;
+    margin-right: 20%;
+}
+
+label {
+    margin-right: 20%;
+}
+
+button {
+    width: 40px;
+    height: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: #095A09;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1 solid white;
+    margin-right: 20%;
+}
+
+form {
+    color: white;
+}
+
+button:disabled {
+    background-color: #509150;
+}
+
+@media only screen and (max-width: 1000px){
+    body {
+        height: 90vh;
+    }
+
+    .content {
+        display: block;
+    }
+    .form {
+        width: 100%
+    }
+    label {
+        margin: 0;
+    }
+    input {
+        margin-right: 0;
+    }
+    button {
+        margin-right: 0;
+    }
+    .pic {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .pic img {
+        margin-left: 0;
+        
+    }
+}
