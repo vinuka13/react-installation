@@ -72,7 +72,10 @@ class Home extends Component {
             <div className='home'>
             <ToastContainer />
                 <div className='header'>
-                    <h1><center> Installation Roteract club of IIT</center></h1>
+                <div className='bg'></div>
+                <div className='bg bg2'></div>
+                <div className='bg bg3'></div>
+                    <h1><center> Installation Rotaract club of IIT</center></h1>
                 </div>
                 <div className='content'>
                     <div className='pic'>
