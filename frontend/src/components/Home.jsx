@@ -75,7 +75,7 @@ class Home extends Component {
                 <div className='bg'></div>
                 <div className='bg bg2'></div>
                 <div className='bg bg3'></div>
-                    <h1><center> Installation Rotaract club of IIT</center></h1>
+                    <h1><center> Installation Ceremony of Rotaract Club of IIT</center></h1>
                 </div>
                 <div className='content'>
                     <div className='pic'>
@@ -91,7 +91,7 @@ class Home extends Component {
                             <input name='Club' type='text' value={this.state.data.Club} onChange={this.handleChange} /> <br />
                             <label htmlFor='Designation'>Designation :</label> <br />
                             <input name='Designation' type='text' value={this.state.data.Designation} onChange={this.handleChange} /> <br />
-                            <button disabled={this.handleErrors()} type='submit' className='btn' style={{width: '100px'}}>Submit</button>
+                            <button disabled={this.handleErrors()} type='submit' className='button-33' style={{width: '100px'}}>Submit</button>
                         </form>
                     </div>
                 </div>
