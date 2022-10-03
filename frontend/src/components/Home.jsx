@@ -91,8 +91,6 @@ class Home extends Component {
                             <input name='Club' type='text' value={this.state.data.Club} onChange={this.handleChange} /> <br />
                             <label htmlFor='Designation'>Designation :</label> <br />
                             <input name='Designation' type='text' value={this.state.data.Designation} onChange={this.handleChange} /> <br />
-                            <label htmlFor='Number'>Telephone Number : *</label> <br />
-                            <input name='Number' type='number' value={this.state.data.Number} onChange={this.handleChange} /> <br />
                             <button disabled={this.handleErrors()} type='submit' className='btn' style={{width: '100px'}}>Submit</button>
                         </form>
                     </div>
