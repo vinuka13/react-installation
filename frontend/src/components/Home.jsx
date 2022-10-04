@@ -12,7 +12,6 @@ class Home extends Component {
             Email: '',
             Club: '',
             Designation: '',
-            Number: ''
         }
      }
      
@@ -21,7 +20,6 @@ class Home extends Component {
         Email: Joi.string().required(),
         Club: Joi.string().allow(''),
         Designation: Joi.string().allow(''),
-        Number: Joi.number().required()
      }
 
      handleErrors() {
