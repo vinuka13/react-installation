@@ -12,6 +12,7 @@ class Home extends Component {
             Email: '',
             Club: '',
             Designation: '',
+            Tele : ''
         }
      }
      
@@ -20,6 +21,7 @@ class Home extends Component {
         Email: Joi.string().required(),
         Club: Joi.string().allow(''),
         Designation: Joi.string().allow(''),
+        Tele: Joi.string().required()
      }
 
      handleErrors() {
@@ -52,7 +54,7 @@ class Home extends Component {
             toast.success('Form submitted')
             setTimeout(() => {
                 window.location.reload();
-            }, 6000);
+            }, 7000);
             
         } catch (error) {
             toast.error('Something went wrong')
@@ -73,24 +75,30 @@ class Home extends Component {
                 <div className='bg'></div>
                 <div className='bg bg2'></div>
                 <div className='bg bg3'></div>
-                    <h1><center> Installation Ceremony of Rotaract Club of IIT</center></h1>
+                    <h1><center> Installation Ceremony of 
+                     Rotaract Club of <br></br> Informatics Institute of Technology</center></h1>
                 </div>
                 <div className='content'>
                     <div className='pic'>
                         <img src='/assets/images/invitation-dummy.jpg' />
                     </div>
                     <div className='form'>
+                    <div className='fields'>
                         <form onSubmit={this.doSubmit}>
-                            <label htmlFor='Name'>Your full name : *</label> <br />
+                            <label htmlFor='Name'>Your Full Name : *</label> <br />
                             <input name='Name' type='text' value={this.state.data.Name} onChange={this.handleChange} /> <br />
-                            <label htmlFor='Email'>Your email : *</label> <br />
+                            <label htmlFor='Email'>Your Email : *</label> <br />
                             <input name='Email' type='email' value={this.state.data.Email} onChange={this.handleChange} /> <br />
-                            <label htmlFor='Club'>Rotaract club :</label> <br />
+                            <label htmlFor='Club'>Rotaract Club :</label> <br />
                             <input name='Club' type='text' value={this.state.data.Club} onChange={this.handleChange} /> <br />
                             <label htmlFor='Designation'>Designation :</label> <br />
-                            <input name='Designation' type='text' value={this.state.data.Designation} onChange={this.handleChange} /> <br />
-                            <button disabled={this.handleErrors()} type='submit' className='button-33' style={{width: '100px'}}>Submit</button>
+                            <input name='Designation' className='desig' type='text' value={this.state.data.Designation} onChange={this.handleChange} /> <br />
+                            <label htmlFor='Tele'>Telephone Number : *</label> <br />
+                            <input name='Tele' className='tele' type='text' value={this.state.data.Tele} onChange={this.handleChange} /> <br />
+                            <button disabled={this.handleErrors()} type='submit' className='button-19' style={{width: '100px'}}>Submit</button>
                         </form>
+                        </div>
+                        <div className='no-fields'></div>
                     </div>
                 </div>
             </div>
